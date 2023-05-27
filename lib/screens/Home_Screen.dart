@@ -170,8 +170,8 @@ class _HomeScreenState extends State<HomeScreen> {
                               children: [
                                 Image.asset(
                                   'assets/images/Doctors.png',
-                                  width: 150,
-                                  height: 120,
+                                  width: 140,
+                                  height: 110,
                                 ),
                                 SizedBox(
                                   height: 10,
