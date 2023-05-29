@@ -129,18 +129,23 @@ class _RegisterState extends State<Register> {
                     SizedBox(
                       height: 30.0,
                     ),
-                    Container(
-                      width: double.infinity,
-                      color: Colors.blueAccent,
-                      child: MaterialButton(
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => HomeScreen()));
-                        },
-                        child: Text(
-                          'Sign Up',
+                    Opacity(
+                      opacity:.5 ,
+                      child: Container(
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20),color: Colors.white70
+                        ),
+                        width: double.infinity,
+                        child: MaterialButton(
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => HomeScreen()));
+                          },
+                          child: Text(
+                            'Sign Up',
+                          ),
                         ),
                       ),
                     ),

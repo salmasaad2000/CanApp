@@ -34,42 +34,53 @@ class Options extends StatelessWidget {
                 ),
                 Padding(padding: EdgeInsets.all(30)),
                 //doctor
-                Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
-                    },
-                    child: Text(
-                      'LOGIN',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+                Opacity(opacity: .5,
+                  child: Container(
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(20),color: Colors.white70
                     ),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                    width: double.infinity,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => LoginPage()));
+                      },
+                      child: Text(
+                        'LOGIN',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.transparent),
+                      ),
                     ),
                   ),
                 ),
                 //user
-                Container(
-                  width: double.infinity,
-                  margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
-                  child: TextButton(
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Register()));
-                    },
-                    child: Text(
-                      'REGISTER',
-                      style: TextStyle(
-                        color: Colors.white,
-                      ),
+                Opacity(
+                  opacity: .5,
+                  child: Container(
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),color: Colors.white70
                     ),
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.green),
+                    width: double.infinity,
+                    margin: EdgeInsets.symmetric(horizontal: 16, vertical: 10),
+                    child: TextButton(
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => Register()));
+                      },
+                      child: Text(
+                        'REGISTER',
+                        style: TextStyle(
+                          color: Colors.black,
+                        ),
+                      ),
+                      style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.transparent),
+                      ),
                     ),
                   ),
                 ),
